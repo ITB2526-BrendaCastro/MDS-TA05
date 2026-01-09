@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Website | Dashboard</title>
     <link rel="stylesheet" href="aaa.css">
 </head>
 <body>
@@ -13,83 +13,65 @@
         <span class="logo">🔍</span>
         <span class="brand-name">My Website</span>
     </div>
-
-    <button class="hamburger" id="hamburger">☰</button>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
 </header>
 
+<div class="sidebar-overlay" id="overlay"></div>
+
 <nav class="sidebar" id="sidebar">
-    <a data-section="home">Home</a>
-    <a data-section="projects">Projects</a>
-    <a data-section="form">Form</a>
-    <a data-section="random">Random</a>
+    <a href="#" data-section="home" class="nav-link active">Home</a>
+    <a href="#" data-section="projects" class="nav-link">Projects</a>
+    <a href="#" data-section="form" class="nav-link">Form</a>
+    <a href="#" data-section="random" class="nav-link">Random</a>
 </nav>
 
 <main class="content">
-
-    <!-- HOME -->
     <section id="home" class="section active">
         <div class="container center">
             <h1>Welcome</h1>
-            <p class="subtitle">
-                A modern and structured personal website layout.
-            </p>
+            <p class="subtitle">A modern and structured personal website layout.</p>
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
-
             <div class="projects-grid">
                 <div class="card">
                     <span class="tag">Cybersecurity</span>
                     <h3>CyberShield</h3>
-                    <p>
-                        A project focused on protecting systems against
-                        vulnerabilities and digital threats.
-                    </p>
+                    <p>Protecting systems against vulnerabilities and digital threats.</p>
                 </div>
-
                 <div class="card">
                     <span class="tag">Network Security</span>
                     <h3>SecureNet</h3>
-                    <p>
-                        Network monitoring and access control solution
-                        designed for secure environments.
-                    </p>
+                    <p>Network monitoring and access control solution for secure environments.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FORM -->
     <section id="form" class="section">
         <div class="container">
             <h2>Contact Form</h2>
-
             <form class="form-box">
-              <label>
-                <input type="text" placeholder="Name">
-              </label>
-              <label>
-                <input type="email" placeholder="Email">
-              </label>
-              <button type="submit">Send</button>
+                <label>
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label>
+                    <input type="email" placeholder="Email" required>
+                </label>
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
 
-    <!-- RANDOM -->
     <section id="random" class="section">
         <div class="container">
             <h2>Random Section</h2>
-            <p>
-                This area is reserved for future content or ideas.
-            </p>
+            <p>This area is reserved for future content or ideas.</p>
         </div>
     </section>
-
 </main>
 
 <footer class="footer">
