@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sidebar.classList.toggle("open");
         overlay.classList.toggle("active");
     };
-
+ñ
     hamburger.addEventListener("click", toggleMenu);
     overlay.addEventListener("click", toggleMenu);
 
