@@ -1,1 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #f8fafc, #eef2ff);
+    color: #1e293b;
+}
+
+/* TOP BAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.hamburger {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #e0e7ff;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #1e293b;
+}
+
+.sidebar a:hover {
+    background: #c7d2fe;
+}
+
+/* MAIN */
+.content {
+    padding: 60px 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #475569;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.tag {
+    display: inline-block;
+    background: #c7d2fe;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+.form-box {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #c7d2fe;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #818cf8;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 80px;
+    padding: 30px;
+    background: #e0e7ff;
+    text-align: center;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .sidebar {
+        left: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+}

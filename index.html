@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Índice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="aaa.css">
 </head>
 <body>
-  <h2>Índice</h2>
-  <ul>
-    <li><a href="#intro">Introducción</a></li>
-    <li><a href="#contenido">Contenido</a></li>
-    <li><a href="#conclusion">Conclusión</a></li>
-  </ul>
 
-  <h3 id="intro">Introducción</h3>
-  <p>Breve texto de introducción.</p>
+<header class="topbar">
+    <div class="brand">
+        <span class="logo">🔍</span>
+        <span class="brand-name">My Website</span>
+    </div>
 
-  <h3 id="contenido">Contenido</h3>
-  <p>Texto principal.</p>
+    <button class="hamburger" id="hamburger">☰</button>
+</header>
 
-  <h3 id="conclusion">Conclusión</h3>
-  <p>Cierre del documento.</p>
+<nav class="sidebar" id="sidebar">
+    <a data-section="home">Home</a>
+    <a data-section="projects">Projects</a>
+    <a data-section="form">Form</a>
+    <a data-section="random">Random</a>
+</nav>
+
+<main class="content">
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+        <div class="container center">
+            <h1>Welcome</h1>
+            <p class="subtitle">
+                A modern and structured personal website layout.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <div class="card">
+                    <span class="tag">Cybersecurity</span>
+                    <h3>CyberShield</h3>
+                    <p>
+                        A project focused on protecting systems against
+                        vulnerabilities and digital threats.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Network Security</span>
+                    <h3>SecureNet</h3>
+                    <p>
+                        Network monitoring and access control solution
+                        designed for secure environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="form" class="section">
+        <div class="container">
+            <h2>Contact Form</h2>
+
+            <form class="form-box">
+              <label>
+                <input type="text" placeholder="Name">
+              </label>
+              <label>
+                <input type="email" placeholder="Email">
+              </label>
+              <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RANDOM -->
+    <section id="random" class="section">
+        <div class="container">
+            <h2>Random Section</h2>
+            <p>
+                This area is reserved for future content or ideas.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Contact Information</p>
+    <p>example@mail.com · +34 600 000 000</p>
+</footer>
+
+<script src="dsxkjghakqs.js"></script>
 </body>
 </html>
