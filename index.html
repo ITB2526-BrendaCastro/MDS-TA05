@@ -10,10 +10,10 @@
 
 <header class="topbar">
     <div class="brand">
-        <span class="logo">🔍</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="logo-img" alt="">
         <span class="brand-name">My Website</span>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+    <button class="hamburger" id="hamburger">☰</button>
 </header>
 
 <div class="sidebar-overlay" id="overlay"></div>
@@ -21,89 +21,145 @@
 <nav class="sidebar" id="sidebar">
     <a href="#" data-section="home" class="nav-link active">Home</a>
     <a href="#" data-section="projects" class="nav-link">Projects</a>
-    <a href="#" data-section="random" class="nav-link">Random</a>
+    <a href="#" data-section="information" class="nav-link">Information</a>
+    <a href="#" data-section="forms" class="nav-link">Forms</a>
 </nav>
 
 <main class="content">
+
+    <!-- HOME -->
     <section id="home" class="section active">
         <div class="container center">
             <h1>Welcome to My Space</h1>
-            <p class="subtitle">Desarrollador enfocado en ciberseguridad y soluciones de red eficientes.</p>
-        </div>
-    </section>
+            <p class="subtitle">Desarrollador enfocado en ciberseguridad y soluciones eficientes.</p>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="card">
-                    <span class="tag">Cybersecurity</span>
-                    <h3>CyberShield</h3>
-                    <p>Sistema de detección de intrusos basado en IA para entornos empresariales.</p>
+            <div class="home-grid">
+                <div class="home-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+                    <h3>Creative Flow</h3>
+                    <p>Proyecto visual inspirado en tonos suaves y estilo Canva.</p>
                 </div>
-                <div class="card">
-                    <span class="tag">Network Security</span>
-                    <h3>SecureNet</h3>
-                    <p>Infraestructura de red privada virtual con protocolos de cifrado de grado militar.</p>
-                </div>
-                <div class="card">
-                    <span class="tag">Web Dev</span>
-                    <h3>DevPort</h3>
-                    <p>Framework ligero para la creación de portafolios de alto rendimiento.</p>
+
+                <div class="home-card">
+                    <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="">
+                    <h3>Blue Harmony</h3>
+                    <p>Diseño minimalista basado en armonía y simplicidad.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="random" class="section">
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Random Section</h2>
-            <p>Este espacio está dedicado a la experimentación y futuras actualizaciones del sistema.</p>
+            <h2>Projects</h2>
+
+            <img class="project-banner" src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="Banner">
+
+            <div class="projects-grid">
+
+                <div class="card">
+                    <span class="tag">UI Design</span>
+                    <h3>Skyline UI</h3>
+                    <p>Interfaz moderna inspirada en tonos celestes.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Creative</span>
+                    <h3>SoftWave</h3>
+                    <p>Diseño fluido con curvas suaves y colores pastel.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Dashboard</span>
+                    <h3>CloudDesk</h3>
+                    <p>Panel minimalista para gestión de tareas.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Landing</span>
+                    <h3>BluePulse</h3>
+                    <p>Landing page elegante con animaciones suaves.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Modular</span>
+                    <h3>OceanGrid</h3>
+                    <p>Diseño modular inspirado en el océano.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Motion</span>
+                    <h3>BlueMotion</h3>
+                    <p>Animaciones limpias y dinámicas.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Calm</span>
+                    <h3>CalmUI</h3>
+                    <p>Interfaz relajante con tonos suaves.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Template</span>
+                    <h3>BlueCanvas</h3>
+                    <p>Plantilla estilo Canva con estética moderna.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Professional</span>
+                    <h3>WaveDesk</h3>
+                    <p>Diseño ondulado con enfoque profesional.</p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Creative</span>
+                    <h3>BlueSpark</h3>
+                    <p>Proyecto creativo con colores vibrantes.</p>
+                </div>
+
+            </div>
         </div>
     </section>
-</main>
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>¿Tienes un proyecto en mente? Hablemos.</p>
-            <ul class="contact-info">
-                <li>📍 Calle Ficticia 123, Madrid, ES</li>
-                <li>📞 +34 600 000 000</li>
-                <li>✉️ contacto@tuweb.com</li>
-            </ul>
+    <!-- INFORMATION -->
+    <section id="information" class="section">
+        <div class="container">
+            <h2>Information</h2>
+
+            <img class="info-banner" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+
+            <p>
+                Este espacio contiene información general sobre mis proyectos, mi proceso creativo y mis herramientas favoritas.
+                Me gusta trabajar con diseños limpios, colores suaves y estructuras que transmitan calma.
+            </p>
         </div>
+    </section>
 
-        <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Support Center</a></li>
-            </ul>
-        </div>
+    <!-- FORMS -->
+    <section id="forms" class="section">
+        <div class="container">
+            <h2>Contact Form</h2>
 
-        <div class="footer-column">
-            <h3>Send a Message</h3>
-            <form class="footer-form">
+            <form class="form-box">
                 <label>
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" placeholder="Nombre" required>
                 </label>
                 <label>
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Apellido" required>
                 </label>
                 <label>
-                    <textarea placeholder="How can I help?" rows="3"></textarea>
+                    <input type="email" placeholder="Correo electrónico" required>
                 </label>
-                <button type="submit">Send Message</button>
+                <label>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                </label>
+                <button type="submit">Enviar</button>
             </form>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </div>
-</footer>
+    </section>
+
+</main>
 
 <script src="dsxkjghakqs.js"></script>
 </body>
