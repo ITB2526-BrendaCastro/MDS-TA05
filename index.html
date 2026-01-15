@@ -1,165 +1,170 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website | Portfolio</title>
-    <link rel="stylesheet" href="aaa.css">
+<meta charset="UTF-8">
+<title>Mi portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="aaa.css">
 </head>
+
 <body>
 
-<header class="topbar">
-    <div class="brand">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="logo-img" alt="">
-        <span class="brand-name">My Website</span>
-    </div>
-    <button class="hamburger" id="hamburger">☰</button>
-</header>
+<div class="layout">
 
-<div class="sidebar-overlay" id="overlay"></div>
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li onclick="changePage('home')">Home</li>
+      <li onclick="changePage('projects')">Projects</li>
+      <li onclick="changePage('about')">About me</li>
+      <li onclick="changePage('contact')">Contact me</li>
+    </ul>
+  </nav>
 
-<nav class="sidebar" id="sidebar">
-    <a href="#" data-section="home" class="nav-link active">Home</a>
-    <a href="#" data-section="projects" class="nav-link">Projects</a>
-    <a href="#" data-section="information" class="nav-link">Information</a>
-    <a href="#" data-section="forms" class="nav-link">Forms</a>
-</nav>
+  <!-- MAIN -->
+  <main>
 
-<main class="content">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <h1 class="stroke-title main-title">Mi portfolio</h1>
 
     <!-- HOME -->
-    <section id="home" class="section active">
-        <div class="container center">
-            <h1>Welcome to My Space</h1>
-            <p class="subtitle">Desarrollador enfocado en ciberseguridad y soluciones eficientes.</p>
+    <section id="home" class="page active">
+      <div class="projects-home">
 
-            <div class="home-grid">
-                <div class="home-card">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
-                    <h3>Creative Flow</h3>
-                    <p>Proyecto visual inspirado en tonos suaves y estilo Canva.</p>
-                </div>
-
-                <div class="home-card">
-                    <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="">
-                    <h3>Blue Harmony</h3>
-                    <p>Diseño minimalista basado en armonía y simplicidad.</p>
-                </div>
-            </div>
+        <div class="project-card" onclick="toggleProject(this)">
+          <h2 class="home-project-title">Blue Shield Security Framework</h2>
+          <p>Defensive cybersecurity project.</p>
+          <div class="expand">
+            <p>
+              Blue Shield is a defensive cybersecurity framework focused on
+              system hardening, firewall configuration, access control and
+              secure infrastructure protection.
+            </p>
+          </div>
         </div>
+
+        <div class="project-card" onclick="toggleProject(this)">
+          <h2 class="home-project-title">Silent Net Traffic Analyzer</h2>
+          <p>Network behavior analysis.</p>
+          <div class="expand">
+            <p>
+              Silent Net analyzes network traffic patterns to detect anomalies,
+              suspicious behavior and intrusion attempts using structured
+              analysis techniques.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
+    <section id="projects" class="page">
+      <h2 class="stroke-title page-title">Projects</h2>
 
-            <img class="project-banner" src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="Banner">
+      <div class="projects-banner"></div>
 
-            <div class="projects-grid">
-
-                <div class="card">
-                    <span class="tag">UI Design</span>
-                    <h3>Skyline UI</h3>
-                    <p>Interfaz moderna inspirada en tonos celestes.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Creative</span>
-                    <h3>SoftWave</h3>
-                    <p>Diseño fluido con curvas suaves y colores pastel.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Dashboard</span>
-                    <h3>CloudDesk</h3>
-                    <p>Panel minimalista para gestión de tareas.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Landing</span>
-                    <h3>BluePulse</h3>
-                    <p>Landing page elegante con animaciones suaves.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Modular</span>
-                    <h3>OceanGrid</h3>
-                    <p>Diseño modular inspirado en el océano.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Motion</span>
-                    <h3>BlueMotion</h3>
-                    <p>Animaciones limpias y dinámicas.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Calm</span>
-                    <h3>CalmUI</h3>
-                    <p>Interfaz relajante con tonos suaves.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Template</span>
-                    <h3>BlueCanvas</h3>
-                    <p>Plantilla estilo Canva con estética moderna.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Professional</span>
-                    <h3>WaveDesk</h3>
-                    <p>Diseño ondulado con enfoque profesional.</p>
-                </div>
-
-                <div class="card">
-                    <span class="tag">Creative</span>
-                    <h3>BlueSpark</h3>
-                    <p>Proyecto creativo con colores vibrantes.</p>
-                </div>
-
-            </div>
+      <div class="project-section">
+        <h3 class="category-title">BBDD</h3>
+        <div class="projects-grid">
+          <div class="box">Secure Data Vault System</div>
+          <div class="box">Encrypted SQL Management Platform</div>
+          <div class="box">High Availability Database Cluster</div>
+          <div class="box">Data Integrity Control Engine</div>
         </div>
+      </div>
+
+      <div class="project-section">
+        <h3 class="category-title">Networks</h3>
+        <div class="projects-grid">
+          <div class="box">Advanced Network Traffic Monitor</div>
+          <div class="box">Real-Time Packet Inspection Tool</div>
+          <div class="box">Intrusion Detection Network Layer</div>
+          <div class="box">Secure Routing Analysis System</div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h3 class="category-title">Systems</h3>
+        <div class="projects-grid">
+          <div class="box">Linux System Hardening Toolkit</div>
+          <div class="box">Process and Resource Control Suite</div>
+          <div class="box">Secure Boot Configuration System</div>
+          <div class="box">System Monitoring and Alert Engine</div>
+        </div>
+      </div>
     </section>
 
-    <!-- INFORMATION -->
-    <section id="information" class="section">
-        <div class="container">
-            <h2>Information</h2>
+    <!-- ABOUT -->
+    <section id="about" class="page">
+      <h2 class="stroke-title page-title">About me</h2>
 
-            <img class="info-banner" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+      <div class="about-center">
 
-            <p>
-                Este espacio contiene información general sobre mis proyectos, mi proceso creativo y mis herramientas favoritas.
-                Me gusta trabajar con diseños limpios, colores suaves y estructuras que transmitan calma.
-            </p>
+        <h3 class="stroke-title about-name">Brenda</h3>
+        <p class="about-age">18 years old · ASIX · ITB Barcelona</p>
+
+        <div class="about-photo">
+          <!-- aquí puedes poner tu foto -->
+          <!-- <img src="tu-foto.jpg" alt="Brenda"> -->
         </div>
+
+        <p class="about-text">
+          I am studying ASIX at ITB Barcelona and I am especially interested in
+          systems, networks and cybersecurity. My goal is to understand how
+          technology works internally and build secure infrastructures.
+        </p>
+
+        <div class="socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
+        </div>
+
+      </div>
     </section>
 
-    <!-- FORMS -->
-    <section id="forms" class="section">
-        <div class="container">
-            <h2>Contact Form</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+      <h2 class="stroke-title page-title">Contact me</h2>
 
-            <form class="form-box">
-                <label>
-                    <input type="text" placeholder="Nombre" required>
-                </label>
-                <label>
-                    <input type="text" placeholder="Apellido" required>
-                </label>
-                <label>
-                    <input type="email" placeholder="Correo electrónico" required>
-                </label>
-                <label>
-                    <input type="tel" placeholder="Número de teléfono" required>
-                </label>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+      <form class="contact-form">
+          <label>
+              <input placeholder="Name" required>
+          </label>
+          <label>
+              <input type="email" placeholder="email@example.com" required>
+          </label>
+          <label>
+              <input placeholder="Subject" required>
+          </label>
+
+          <label>
+              <select required>
+              <option disabled selected>Type of subject</option>
+              <option>Work</option>
+              <option>Collaboration</option>
+              <option>Question</option>
+            </select>
+          </label>
+
+          <label>
+              <select required>
+              <option disabled selected>Urgency</option>
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+            </select>
+          </label>
+
+          <button>Send</button>
+      </form>
     </section>
 
-</main>
+  </main>
+
+</div>
 
 <script src="dsxkjghakqs.js"></script>
 </body>
